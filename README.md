@@ -1,1 +1,1 @@
-# Kursovaya
+![Image alt](shema.png)
