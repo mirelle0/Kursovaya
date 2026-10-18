@@ -1,1 +1,1 @@
-![Image alt](shema.png)
+![Image alt](shema.drawio.png)
