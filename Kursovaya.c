@@ -16,12 +16,29 @@ double calculateIndicator(double X) {
     }
 }
 
+void checkState(double Q) {
+    double diff = fabs(Q - 50.0);
+    printf("Отклонение от номинала: %.2f\n", diff);
+
+    if (diff <= 10.0) {
+        printf("Состояние: НОРМА\n");
+    }
+    else {
+        printf("Состояние: ТРЕВОГА (отклонение больше 10)\n");
+    }
+}
+
 int main() {
     setlocale(LC_ALL, "RUS");
     double activityX;
+
     printf("Введите X: ");
     scanf("%lf", &activityX);
+
     double resultQ = calculateIndicator(activityX);
     printf("Q = %.4f\n", resultQ);
+
+    checkState(resultQ); 
+
     return 0;
 }
