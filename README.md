@@ -18,13 +18,11 @@
 
 $$
 Q(X) =
-\left\{
-\begin{array}{ll}
-6 \cdot \sqrt{X - 65 + 1} + 5, & X < 65 \\[8pt]
-2 \cdot (X - 77.5) + 50, & 65 \leq X \leq 90 \\[8pt]
-0.25 \cdot (X - 90)^2 + 55, & X > 90
-\end{array}
-\right.
+\begin{cases}
+6 \cdot \sqrt{X - 65 + 1} + 5, & \text{если } X < 65, \\
+2 \cdot (X - 77.5) + 50, & \text{если } 65 \leq X \leq 90, \\
+0.25 \cdot (X - 90)^2 + 55, & \text{если } X > 90.
+\end{cases}
 $$
 
 
